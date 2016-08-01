@@ -1,9 +1,10 @@
 'use strict';
 const http = require('http');
+const url = require('url');
 
 function router(req, res) {
-	console.log('Requested route is: ', req.url);
-	console.log('Request method is: ', req.method);
+	let baseURI = url.parse(req.url, true);
+	console.log('Requested route is: ', baseURI);
 	res.writeHead(200, {'Content-type': 'text/html'});
 	res.end('<h1>Hello Router!</h1>');
 }
