@@ -15,7 +15,7 @@ let routes = {
 		'/api/getinfo': (req, res) => {
 			// In a more sophisticated app, this is where you would
 			// fetch data from a DB and respond as JSON
-			res.writeHead(200, {'Content-type': 'text/html'});
+			res.writeHead(200, {'Content-type': 'application/json'});
 			res.end(JSON.stringify(req.queryParams));
 		}
 	},
