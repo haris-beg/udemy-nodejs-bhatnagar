@@ -1,6 +1,7 @@
 'use strict';
 const http = require('http');
 const url = require('url');
+const qs = require('querystring');
 
 let routes = {
 	'GET': {
@@ -27,7 +28,12 @@ let routes = {
 			});
 
 			req.on('end', () => {
-				console.log(body);
+				let params = qs.parse(body);
+				console.log('Username: ', params['username']);
+				console.log('Password: ', params['password']);
+				// In a more sophisticated app, this is where you would
+				// query a DB to see if the user exists or not.
+				// If exists, then send a JSON response to the client.
 				res.end();
 			})
 		}
