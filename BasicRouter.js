@@ -20,7 +20,17 @@ let routes = {
 		}
 	},
 	'POST': {
+		'/api/login': (req, res) => {
+			let body = '';
+			req.on('data', data => {
+				body += data;
+			});
 
+			req.on('end', () => {
+				console.log(body);
+				res.end();
+			})
+		}
 	},
 	'NA': (req, res) => {
 		res.writeHead(404);
