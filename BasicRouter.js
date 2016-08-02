@@ -27,8 +27,7 @@ let routes = {
 				body += data;
 				if (body.length > 2097152) {
 					res.writeHead(413, {'Content-type': 'text/html'});
-					res.end('<h3>Error: The size of the file being uploaded exceeds the 2 MB limit!</h3>', 
-						() => req.connection.destroy());
+					res.end('<h3>Error: The size of the file being uploaded exceeds the 2 MB limit!</h3>');
 					console.log('The file being uploaded exceeds the 2 MB size limit');
 				}
 			});
