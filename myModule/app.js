@@ -1,7 +1,10 @@
 'use strict';
 
 const Enigma = require('./enigma');
-const eng = new Enigma();
+const eng = new Enigma('harisbeg-key');
 
-console.log(eng.hello("Haris"));
-console.log(eng.goodmorning("Haris"));
+let encodedString = eng.encode("Don't worry, be happy!");
+let decodedString = eng.decode(encodedString);
+
+console.log('Encoded version of String = ' + encodedString);
+console.log('Decoded version of String = ' + decodedString);
