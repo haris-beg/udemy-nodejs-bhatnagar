@@ -1,11 +1,13 @@
 'use strict';
 
-
-
-exports.hello = (user) => {
-	return "Hello " + user;
+module.exports = function() {
+	return {
+		hello: (user) => {
+			return "Hello " + user;
+		},
+		goodmorning: (user) => {
+			return "Good Morning " + user;
+		}
+	}
 }
 
-exports.goodmorning = (user) => {
-	return "Good Morning " + user;
-}

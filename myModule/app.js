@@ -1,6 +1,7 @@
 'use strict';
 
-const enigma = require('./enigma');
+const Enigma = require('./enigma');
+const eng = new Enigma();
 
-console.log(enigma.hello("Haris"));
-console.log(enigma.goodmorning("Haris"));
+console.log(eng.hello("Haris"));
+console.log(eng.goodmorning("Haris"));
