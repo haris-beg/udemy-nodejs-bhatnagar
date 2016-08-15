@@ -1,0 +1,11 @@
+{
+  "name": "enigma",
+  "version": "1.0.0",
+  "description": "Enigma helps you encrypt and decrypt text strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Haris Beg",
+  "license": "ISC"
+}
