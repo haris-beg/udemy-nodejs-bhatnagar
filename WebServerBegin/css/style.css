@@ -1,0 +1,339 @@
+@import url(http://fonts.googleapis.com/css?family=Abel|Michroma|Telex|Carrois+Gothic+SC);
+
+body {
+    margin:0px;    
+}
+
+hr {
+     background:red;
+     height:4px;
+     margin:0px;
+     border:0px;
+}
+
+.container 
+{
+    position:relative;
+    margin:auto;
+    width:960px;
+    height:970px;
+}
+
+.header {
+     position:relative;
+     width:960px;
+     height:133px;
+}
+
+#header_1 {
+    /* background:rgb(255,0,0); */
+/*    height:100px;*/
+    width:417px;
+    float:left;
+}
+
+#header_2 {
+/*    background:rgb(255,0,0);*/
+    height:120px;
+    width:125px; 
+    float:left;
+}
+
+#header_3 {
+/*    background:rgb(0,0,255);*/
+/*    height:100px;*/
+    width:417px;
+    float:left;
+}
+
+.greyarea {
+     background:rgb(235, 235, 235);
+     width:417px;
+     height:60px;
+}
+
+.links {
+     position:relative;
+     float:left;
+     width:208px;
+     height:80px;
+    text-align:center;
+}
+
+.headline {
+    position:relative;
+    width:960px;
+    height:70px;
+    text-align:center;
+}
+
+.headline h1 {
+    font-family: 'Michroma', sans-serif;
+    font-weight:normal;
+    margin:0px;
+    padding-top:13px;
+}
+
+h5 {
+     margin:0px;
+     font-family: 'Abel', sans-serif;
+    font-size:16px;
+    padding-top:20px
+}
+
+a {
+    color:rgb(0,0,0);
+    text-decoration:none;
+}
+
+a:hover {
+    color:rgb(255,0,0);   
+}
+
+.image {
+     position:relative;
+     width:960px;
+     height:300px;
+     background:#c3c3c3;
+}
+
+.highlights_container {
+     position:relative;
+     width:960px;
+     height:400px;
+}
+
+.boxes {
+     position:relative;
+/*     background:red;*/
+     width:320px;
+     height:400px;
+     float:left;
+}
+
+.hlogo {
+    position:relative;
+    width:200px;
+    height:200px;
+    margin:auto;
+/*    background:#c3c3c3;*/
+}
+
+.htitle {
+    position:relative;
+    width:200px;
+    height:40px;
+    margin:auto;
+}
+
+.htext {
+    position:relative;
+    width:200px;
+    height:180px;
+    margin:auto;
+}
+
+.htitle h4 {
+    text-align:center;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    margin:0px;
+    font-size:18px;
+    padding:8px
+}
+
+.htext p {
+    font-family: 'Telex', sans-serif;
+    font-size:11px;
+    text-align:justify;
+    margin:0px;
+}
+
+/* About Us Page Styles */
+
+.about-content {
+     height:700px;
+}
+
+.about-title {
+     height:120px;
+    
+}
+
+.about-title h2 {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size:40px;
+    color:rgb(255,0,0);
+    padding-top:35px;
+    padding-left:5px
+}
+
+.about-main {
+    width:960px;   
+}
+
+.about-menu {
+    float:left;
+    width:250px;
+    height:580px;
+    background:rgb(240,240,240);
+}
+
+.about-menu-ul {
+    list-style:none;
+    font-family: 'Telex', sans-serif;
+    font-size:14px;
+    padding:10px;
+}
+
+.about-menu-ul li {
+     border:1px solid rgb(210,210,210);
+     padding:5px;
+     background:rgb(230,230,230);
+}
+
+.about-menu-ul li:hover {
+     background:rgb(255, 125, 125);
+     color:rgb(255,255,255);
+}
+
+.about-main-content {
+    width:690px;
+    float:left;
+    height:580px;
+    background:rgb(248,248,248);
+    padding:10px;
+}
+
+.about-main-content h6 {
+    font-family: 'Telex', sans-serif;
+    font-size:20px;
+    padding:0px;
+    margin:0px;
+    margin-top:10px
+}
+
+.about-main-content p {
+    font-family:sans-serif;
+    font-size:13px;
+    text-align:justify;
+    line-height:22px
+}
+
+#teamProfiles {
+     padding:0px;
+     margin:0px;
+    list-style:none;
+}
+
+#teamProfiles li div {
+    width:100px;
+    height:110px;
+    background:rgb(190,190,190);
+    border:1px solid;
+    float:left;
+    margin-right:20px;
+}
+
+.portfolio-ul {
+    width:960px;
+     padding:8px;
+    margin:0px;
+    float:left;
+    list-style:none;
+}
+
+.portfolio-ul li {
+    width:150px;
+    height:113px;
+    float:left;
+    margin-right:40px;
+    margin-bottom:40px;
+    box-shadow:0px 0px 10px 2px rgba(0,0,0,0.5);
+    opacity:0.8;
+}
+
+.portfolio-ul li:hover {
+     opacity:1.0;   
+     box-shadow:0px 0px 1px 1px rgba(0,0,0,0.5);
+}
+
+.contact-form {
+     position:relative;
+}
+
+.field-holder {
+     width:440px;
+/*     height:50px;*/
+
+}
+
+.field-holder .label {
+    width:150px;
+    float:left;
+}
+
+.field-holder .field {
+       
+    
+}
+
+.field-holder .label h6 {
+    font-family:sans-serif;
+    font-size:12px;
+    font-weight:normal;
+    padding:0px;
+    margin:0px;
+    margin-top:4px
+}
+
+.field-holder .field input,textarea {
+    border-radius:5px;
+    padding:5px;
+    border:1px solid;
+    width: 250px;
+    font-weight:bold;
+}
+
+.field-holder .field input:focus,textarea:focus {
+    border:1px solid red;
+}
+
+.clearfix {
+     clear:both;   
+     float:none;
+}
+
+#sendMessage {
+     padding:10px;
+     border-radius:10px;
+     font-weight:bold;
+    border:3px solid rgb(255,0,0);
+    cursor:pointer;
+}
+
+#sendMessage:hover {
+        border:3px solid rgb(0,255,0);
+    
+}
+
+.about-menu h6 {
+        font-family:sans-serif;
+        margin:0px;
+        margin-left:25px;
+        font-size:13px;
+        margin-top:25px;
+}
+
+.about-menu p {
+     font-family:sans-serif;
+     margin:0px;
+     margin-left:25px;
+    font-size:11px;
+   
+}
+
+.about-menu hr {
+/*     border:1px solid red;*/
+     height:1px;
+    
+}
