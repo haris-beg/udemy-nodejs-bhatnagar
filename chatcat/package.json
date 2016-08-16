@@ -12,6 +12,6 @@
     "node": "4.2.2"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "4.13.3"
   }
 }
