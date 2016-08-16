@@ -9,6 +9,9 @@
   "author": "Haris Beg",
   "license": "ISC",
   "engines": {
-  	"node": "4.2.2"
+    "node": "4.2.2"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
   }
 }
