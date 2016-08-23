@@ -4,6 +4,7 @@ const app = express(); // creates an instance of an express app
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', './views');// not necessary, as it is same as default 
+app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 // creating a route handler for the root route
