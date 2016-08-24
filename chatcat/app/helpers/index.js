@@ -15,6 +15,9 @@ let _registerRoutes = (routes, method) => {
             else if (method === 'post') {
                 router.post(key, routes[key]);
             }
+            else {
+                router.use(routes[key]);
+            }
         }
     }
 }
