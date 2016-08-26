@@ -8,6 +8,8 @@ app.set('views', './views');// not necessary, as it is same as default
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
+app.use(chatCat.session);
+
 // mount the middleware
 app.use('/', chatCat.router);
 
