@@ -5,3 +5,7 @@ MyREPLsession2.js
 MyREPLsession3.js
 outImage.png
 StoryBook.txt
+chatcat/app/config/development.json
+myModule/app.js
+myModule/enigma/index.js
+myModule/enigma/package.json
