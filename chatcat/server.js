@@ -10,6 +10,16 @@ app.set('view engine', 'ejs');
 
 app.use(chatCat.session);
 
+// mount the Morgan middleware
+app.use(require('morgan')('combined', {
+	stream: {
+		write: message => {
+			// Write to logs
+			chatCat.logger.log('info', message);
+		}
+	}
+}));
+
 // mount the middleware
 app.use('/', chatCat.router);
 
