@@ -54,10 +54,23 @@ let createNewUser = profile => {
     });
 }
 
-// expose the routes method to the outside world
+// The ES6 promisified version of findById
+let findById = id => {
+    return new Promise((resolve, reject) => {
+        db.userModel.findById(id, (error, user) => {
+            if (error) {
+                reject(error);
+            } else {
+                resolve(user);
+            }
+        });
+    });
+}
+
 module.exports = {
     //route: route
     route, //ES6 shorthand for the same as the last commented line
     findOne,
-    createNewUser
+    createNewUser,
+    findById
 }
