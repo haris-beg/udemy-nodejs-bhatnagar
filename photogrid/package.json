@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.4.3",
+    "hogan-express": "0.5.2",
     "socket.io": "1.0.5"
   }
 }
